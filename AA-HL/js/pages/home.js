@@ -1,0 +1,6 @@
+// start page: just tiles that link to the topics
+PAGES.home={t:'Start',h:()=>`<h1>Maths AA HL</h1>
+<p>Analysis and approaches, higher level. Each topic has the formulas, a graph you can move, and a calculator that shows its working. The graphs run on a small plotting engine in <code>helpers.js</code>.</p>
+<div class="tiles">${[['series','1','Sequences &amp; series','AP, GP, sum to infinity, binomial'],['complex','1','Complex numbers','Argand diagram, de Moivre, roots'],['functions','2','Functions','Type any f(x) and transform it'],['trig','3','Trigonometry','Unit circle, identities, exact values'],['stats','4','Probability','Binomial and normal distributions'],['calc','5','Calculus','Tangents, trapezium rule, rules table']].map(([k,n,t,d])=>`<a href="#${k}"><b>${t}</b>${d}<br><small>Topic ${n}</small></a>`).join('')}</div>
+<div class="card"><b>Exam map</b><br>Paper 1: 2 h, no calculator. Paper 2: 2 h, GDC. Paper 3: 1 h, GDC, two long problem-solving questions. Learn to show every line of working, because method marks save you.</div>
+<small>Function boxes accept things like <code>2x^2 - 3x</code>, <code>sin(x)</code>, <code>e^x</code>, <code>ln(x)</code>, <code>1/(x-1)</code>.</small>`};
